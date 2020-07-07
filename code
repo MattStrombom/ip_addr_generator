@@ -1,0 +1,11 @@
+import random
+
+# generates random ip addresses for 10.0.0.0/24 subnet
+def random_ip(base_ip):
+    octet = str(random.randint(1, 254))
+    print(base_ip + '.' + octet)
+
+random_ip("10.0.0")
+random_ip("10.0.0")
+random_ip("10.0.0")
+random_ip("10.0.0")
